@@ -1,0 +1,62 @@
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import String
+
+import serial
+import time
+
+serial_comm = serial.Serial()
+
+class CommunicationNode(Node):
+    
+    def __init__(self):
+        super().__init__("serial_comm")
+
+        self.declare_parameter("serial_port", "None") # Get port parameter from terminal or launch file.
+        self.declare_parameter("baud_rate", 0) # Get baud rate parameter from terminal or launch file.
+
+        sp, br = self.read_parameters() # Read parameters which are coming from terminal or launch file.
+
+        self.connect_serial_port(serial_port=sp, baud_rate=br) # Connect to given port at given baud rate.
+
+        time.sleep(0.5) # Wait for connection.
+
+        self.data_publisher_ = self.create_publisher(String, "serial_comm", 10) # Start publising serial port data.
+
+        self.get_logger().info("Serial communication has started.")
+        self.timer_ = self.create_timer(0.1, self.get_serial_data)
+
+    def read_parameters(self):
+        serial_port_ = self.get_parameter("serial_port").get_parameter_value().string_value
+        baud_rate_ = self.get_parameter("baud_rate").get_parameter_value().integer_value
+
+        self.get_logger().info("Port: " + serial_port_ + " Baud Rate: " + str(baud_rate_))
+
+        return serial_port_, baud_rate_
+
+    def connect_serial_port(self, serial_port, baud_rate):
+        serial_comm.port = serial_port
+        serial_comm.baudrate = baud_rate
+        serial_comm.timeout = 1
+        serial_comm.open()
+
+    def get_serial_data(self):
+        try:
+            msg = String()
+            msg.data = serial_comm.readline().decode("utf").rstrip("\n").rstrip("\r")
+            self.data_publisher_.publish(msg)
+        except:
+            self.get_logger().warn("Serial communication error.")
+       
+
+def main(args=None):
+    rclpy.init(args=args)
+
+    node = CommunicationNode()
+    rclpy.spin(node)
+
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
+

@@ -1,0 +1,9 @@
+source;share/aros2duino/hook/pythonpath.ps1
+source;share/aros2duino/hook/pythonpath.dsv
+source;share/aros2duino/hook/pythonpath.sh
+source;share/aros2duino/hook/ament_prefix_path.ps1
+source;share/aros2duino/hook/ament_prefix_path.dsv
+source;share/aros2duino/hook/ament_prefix_path.sh
+source;../../build/aros2duino/share/aros2duino/hook/pythonpath_develop.ps1
+source;../../build/aros2duino/share/aros2duino/hook/pythonpath_develop.dsv
+source;../../build/aros2duino/share/aros2duino/hook/pythonpath_develop.sh

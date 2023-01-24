@@ -1,0 +1,4 @@
+[console_scripts]
+find_ports = aros2duino.find_ports:main
+serial_comm = aros2duino.serial_comm:main
+

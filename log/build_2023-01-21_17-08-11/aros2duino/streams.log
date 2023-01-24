@@ -1,0 +1,17 @@
+[0.611s] Invoking command in '/home/eren/aros2duino_ws/build/aros2duino': PYTHONPATH=/home/eren/aros2duino_ws/build/aros2duino/prefix_override:/home/eren/aros2duino_ws/install/aros2duino/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/eren/aros2duino_ws/build/aros2duino/build --no-deps install_data
+[0.837s] running develop
+[0.983s] running egg_info
+[0.983s] writing aros2duino.egg-info/PKG-INFO
+[0.983s] writing dependency_links to aros2duino.egg-info/dependency_links.txt
+[0.984s] writing entry points to aros2duino.egg-info/entry_points.txt
+[0.984s] writing requirements to aros2duino.egg-info/requires.txt
+[0.984s] writing top-level names to aros2duino.egg-info/top_level.txt
+[0.986s] reading manifest file 'aros2duino.egg-info/SOURCES.txt'
+[0.987s] writing manifest file 'aros2duino.egg-info/SOURCES.txt'
+[0.988s] running build_ext
+[0.988s] Creating /home/eren/aros2duino_ws/install/aros2duino/lib/python3.10/site-packages/aros2duino.egg-link (link to .)
+[0.989s] Installing arduino_comm = aros2duino.arduino_comm:mainfind_ports script to /home/eren/aros2duino_ws/install/aros2duino/lib/aros2duino
+[0.990s] 
+[0.990s] Installed /home/eren/aros2duino_ws/build/aros2duino
+[0.990s] running install_data
+[1.015s] Invoked command in '/home/eren/aros2duino_ws/build/aros2duino' returned '0': PYTHONPATH=/home/eren/aros2duino_ws/build/aros2duino/prefix_override:/home/eren/aros2duino_ws/install/aros2duino/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/eren/aros2duino_ws/build/aros2duino/build --no-deps install_data

@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing aros2duino.egg-info/PKG-INFO
+writing dependency_links to aros2duino.egg-info/dependency_links.txt
+writing entry points to aros2duino.egg-info/entry_points.txt
+writing requirements to aros2duino.egg-info/requires.txt
+writing top-level names to aros2duino.egg-info/top_level.txt
+reading manifest file 'aros2duino.egg-info/SOURCES.txt'
+writing manifest file 'aros2duino.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/eren/aros2duino_ws/install/aros2duino/lib/python3.10/site-packages/aros2duino.egg-link (link to .)
+Installing arduino_comm = aros2duino.arduino_comm:mainfind_ports script to /home/eren/aros2duino_ws/install/aros2duino/lib/aros2duino
+
+Installed /home/eren/aros2duino_ws/build/aros2duino
+running install_data
