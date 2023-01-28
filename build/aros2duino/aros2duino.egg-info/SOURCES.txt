@@ -4,6 +4,7 @@ setup.py
 aros2duino/__init__.py
 aros2duino/find_ports.py
 aros2duino/serial_comm.py
+aros2duino/test_writing.py
 aros2duino.egg-info/PKG-INFO
 aros2duino.egg-info/SOURCES.txt
 aros2duino.egg-info/dependency_links.txt

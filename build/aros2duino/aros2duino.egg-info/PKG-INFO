@@ -1,10 +1,10 @@
 Metadata-Version: 2.1
 Name: aros2duino
-Version: 0.0.0
-Summary: TODO: Package description
+Version: 0.0.1
+Summary: Package for read and publish serial communication data to ROS2 system.
 Home-page: UNKNOWN
-Maintainer: eren
-Maintainer-email: jpantherr@gmail.com
+Maintainer: Taha Eren Karakis
+Maintainer-email: tekkarakis@gmail.com
 License: TODO: License declaration
 Platform: UNKNOWN
 

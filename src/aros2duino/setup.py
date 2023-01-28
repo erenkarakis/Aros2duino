@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             "serial_comm = aros2duino.serial_comm:main",
-            "find_ports = aros2duino.find_ports:main"
+            "find_ports = aros2duino.find_ports:main",
+            "test_writing = aros2duino.test_writing:main"
         ],
     },
 )
