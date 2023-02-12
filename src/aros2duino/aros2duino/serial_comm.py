@@ -23,7 +23,9 @@ class CommunicationNode(Node):
         time.sleep(0.5) # Wait for connection.
 
         self.data_publisher_ = self.create_publisher(String, "serial_comm", 10) # Start publising serial port data.
-        self.data_subscriber_ = self.create_subscription(String, sub, self.write_serial_data, 10)
+
+        if sub != "None":
+            self.data_subscriber_ = self.create_subscription(String, sub, self.write_serial_data, 10)
 
         self.get_logger().info("Serial communication has started.")
         self.timer_ = self.create_timer(0.1, self.read_serial_data)
