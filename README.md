@@ -24,12 +24,12 @@ You can add the `setup.bash` file to `.bashrc` file if you  dont want to source 
     ```
     This will print avaliable port paths and names.
 #### Using `serial_comm` for communicate with given serial port and publish data:
-* To run this code you need to know correct port path and baud rate.
+* To run this code you need to know correct port path, baud rate and if you want to use serial writing you need to know topic name to subscribe.
     ```sh-session
-    ros2 run aros2duino serial_comm --ros-args -p serial_port:=<device_port> -p baud_rate:=<baud_rate>
+    ros2 run aros2duino serial_comm --ros-args -p serial_port:=<device_port> -p baud_rate:=<baud_rate> -p subsribe_to:=<topic_name>
     ```
-    **Don't type </> characters**
+    * **Don't type </> characters**
+    * If you don't want to use serial writing function just type ***None*** to `subsribe_to` parameter.
 ---
 
-### **I am still developing the code. Now package can only read serial datas. I am working on write serial datas to serial device.**
 ##### *Sorry for my bad English :D*
