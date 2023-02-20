@@ -1,5 +1,5 @@
 # Aros2duino
-You can communicate between ROS2 and serial device with this project. **(Now only for read data from serial device.)**
+You can communicate between ROS2 and serial device with this project.
 
 ## How to download?
 Go inside where you want download the repo. (Like `aros2duino_ws`)
