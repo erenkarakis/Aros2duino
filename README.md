@@ -29,7 +29,7 @@ You can add the `setup.bash` file to `.bashrc` file if you  dont want to source 
     ros2 run aros2duino serial_comm --ros-args -p serial_port:=<device_port> -p baud_rate:=<baud_rate> -p subscribe_to:=<topic_name>
     ```
     * **Don't type </> characters**
-    * If you don't want to use serial writing function just type ***None*** to `subsribe_to` parameter.
+    * If you don't want to use serial writing function just type ***None*** to `subscribe_to` parameter.
 ---
 
 ##### *Sorry for my bad English :D*
